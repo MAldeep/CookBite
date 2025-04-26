@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookBite - Cafe & Restaurant</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--css-->
+    <link rel="stylesheet" href="./index.css">
+    <!--js-->
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="fluid col-12">
+        <!--header start-->
+        <header class="col-12">
+            <div class="container d-flex justify-content-between align-items-center">
+                <img src="./Assets/logo.svg" alt="CookBite Logo">
+                <nav class="d-none d-lg-flex justify-content-center gap-4 align-items-center">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Reservation</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="services d-flex justify-content-center align-items-center gap-4">
+                    <i class='bx bx-cart-alt cart-icon'></i>
+                    <i class='bx bx-search d-none d-lg-block' ></i>
+                    <div class="divider d-none d-lg-block"></div>
+                    <i class='bx bx-menu' onclick="showTheOffCanvas()" ></i>
+                    <button class="d-none d-lg-flex justify-content-center gap-1 align-items-center">
+                        Book a table
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </button>
+                </div>
+                <div class="side-bar col-11 col-md-6 col-lg-4" id="sideBar">
+                    <i class='bx bx-x close-icon' onclick="closingTheOffCanvas()"></i>
+                    <div class="upper"></div>
+                    <div class="lower"></div>
+                </div>
+            </div>
+        </header>
+        <!--header end-->
+        <!--hero start-->
+        <section class="col-12 hero d-flex justify-content-center align-items-center position-relative">
+            <img src="./Assets/banner-01.webp" alt="" class="position-absolute moving-1 moving d-none d-md-block d-lg-block">
+            <img src="./Assets/banner-02.webp" alt="" class="position-absolute moving-5 moving d-none d-md-block d-lg-block">
+            <img src="./Assets/shape-01.webp" alt="" class="position-absolute fixed-2 d-none d-lg-block">
+            <img src="./Assets/shape-02.webp" alt="" class="position-absolute fixed-3 d-none d-lg-block">
+            <img src="./Assets/shape-03.webp" alt="" class="position-absolute fixed-4 d-none d-lg-block">
+            <img src="./Assets/shape-04.webp" alt="" class="position-absolute fixed-1 d-none d-lg-block">
+            <img src="./Assets/shape-05.webp" alt="" class="position-absolute moving-2 moving d-md-block d-none d-lg-block">
+            <img src="./Assets/shape-06.webp" alt="" class="position-absolute moving-6 moving d-md-block d-none d-lg-block">
+            <img src="./Assets/shape-07.webp" alt="" class="position-absolute moving-4 moving">
+            <img src="./Assets/shape-08.webp" alt="" class="position-absolute moving-3 moving">
+            <div class="content d-flex justify-content-center align-items-center flex-column gap-3 gap-md-4 text-center">
+                <h2>Celebrating food</h2>
+                <h2>Celebrating life</h2>
+                <p>
+                    Fast food is a popular category of food that emphasizes quick a service and convenience It
+                    typically includes items n the category of restaurant service, establishments
+                </p>
+                <button class="d-flex justify-content-center gap-2 align-items-center">
+                    Order now 
+                    <i class='bx bx-right-arrow-alt' ></i>
+                </button>
+            </div>
+        </section>
+        <!--hero end-->
+    </div>
+</body>
+</html>
