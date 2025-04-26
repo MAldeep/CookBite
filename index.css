@@ -9,6 +9,9 @@
 P,h1{
     margin: 0;
 }
+i{
+    cursor: pointer;
+}
 .fluid{
     header{
         background-color: #F4F1EA;
@@ -67,7 +70,6 @@ P,h1{
             top: 0;
             bottom: 0;
             right: 0;
-            background-color: #0E1730;
             z-index: 1000;
             border-left: 3px solid #D30000;
             transition: all 0.5s ease-in-out;
@@ -85,6 +87,19 @@ P,h1{
             .upper{
                 background-color: #F01543;
                 height: 20%;
+            }
+            .lower{
+                background-color: #F4F1EA;
+                height: 80%;
+                img{
+                    width: 30%;
+                    border-radius: 8px;
+                    transition: all 0.5s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
             }
         }
     }
