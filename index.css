@@ -254,6 +254,60 @@ i{
             }
         }
     }
+    .about-food{
+        img.main{
+            width: 456px;
+            height: 456px;
+            object-fit: cover;
+            @media screen and (max-width: 676px) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+        .info{
+            p{
+                font-family: "ZCOOL XiaoWei", sans-serif;
+                color: #D30000;
+                font-weight: 300;
+                font-size: 22px;
+            }
+            h2{
+                font-family: "ZCOOL XiaoWei", sans-serif;
+                font-size: 55px;
+            }
+            .brief{
+                font-family: "Open Sans", sans-serif;
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.4);
+                font-weight: 500;
+            }
+            button{
+                width: fit-content;
+                background-color: #D30000;
+                color:#F3ECDC;
+                border: none;
+                padding: 15px 20px;
+                font-size: 18px;
+                border-radius: 100px;
+                font-family: "ZCOOL XiaoWei", sans-serif;
+            }
+        }
+        .data{
+            .upper{
+                p{
+                    font-size: 40px;
+                    font-family: "ZCOOL XiaoWei", sans-serif;
+                    @media screen and (max-width: 676px) {
+                        font-size: 30px;
+                    }
+                }
+            }
+            p.light{
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
 }
 @keyframes spin {
     from {

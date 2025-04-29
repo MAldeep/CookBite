@@ -1,125 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CookBite - Cafe & Restaurant</title>
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
     <!--box icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!--css-->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <!--favicon-->
-    <link rel="shortcut icon" href="./Assets/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assets/logo.svg" type="image/x-icon" />
     <!--js-->
     <script defer src="./index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="fluid col-12">
-        <!--header start-->
-        <header class="col-12">
-            <div class="container d-flex justify-content-between align-items-center">
-                <img src="./Assets/logo.svg" alt="CookBite Logo">
-                <nav class="d-none d-lg-flex justify-content-center gap-4 align-items-center">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Reservation</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Contact</a>
-                </nav>
-                <div class="services d-flex justify-content-center align-items-center gap-4">
-                    <i class='bx bx-cart-alt cart-icon'></i>
-                    <i class='bx bx-search d-none d-lg-block' ></i>
-                    <div class="divider d-none d-lg-block"></div>
-                    <i class='bx bx-menu' onclick="showTheOffCanvas()" ></i>
-                    <button class="d-none d-lg-flex justify-content-center gap-1 align-items-center">
-                        Book a table
-                        <i class='bx bx-right-arrow-alt' ></i>
-                    </button>
-                </div>
-                <div class="side-bar col-11 col-md-6 col-lg-4" id="sideBar">
-                    <i class='bx bx-x close-icon' onclick="closingTheOffCanvas()"></i>
-                    <div class="upper d-flex justify-content-center align-items-center">
-                        <img src="./Assets/logo2.svg" alt="">
-                    </div>
-                    <div class="lower d-flex flex-wrap justify-content-center align-items-center gap-1">
-                        <img src="./Assets/gallery-01.webp" alt="">
-                        <img src="./Assets/gallery-02.webp" alt="">
-                        <img src="./Assets/gallery-03.webp" alt="">
-                        <img src="./Assets/gallery-04.webp" alt="">
-                        <img src="./Assets/gallery-05.webp" alt="">
-                        <img src="./Assets/gallery-06.webp" alt="">
-                    </div>
-                </div>
+      <!--header start-->
+      <header class="col-12">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <img src="./Assets/logo.svg" alt="CookBite Logo" />
+          <nav
+            class="d-none d-lg-flex justify-content-center gap-4 align-items-center"
+          >
+            <a href="#" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Reservation</a>
+            <a href="#">Blog</a>
+            <a href="#">Gallery</a>
+            <a href="#">Pages</a>
+            <a href="#">Contact</a>
+          </nav>
+          <div
+            class="services d-flex justify-content-center align-items-center gap-4"
+          >
+            <i class="bx bx-cart-alt cart-icon"></i>
+            <i class="bx bx-search d-none d-lg-block"></i>
+            <div class="divider d-none d-lg-block"></div>
+            <i class="bx bx-menu" onclick="showTheOffCanvas()"></i>
+            <button
+              class="d-none d-lg-flex justify-content-center gap-1 align-items-center"
+            >
+              Book a table
+              <i class="bx bx-right-arrow-alt"></i>
+            </button>
+          </div>
+          <div class="side-bar col-11 col-md-6 col-lg-4" id="sideBar">
+            <i class="bx bx-x close-icon" onclick="closingTheOffCanvas()"></i>
+            <div class="upper d-flex justify-content-center align-items-center">
+              <img src="./Assets/logo2.svg" alt="" />
             </div>
-        </header>
-        <!--header end-->
-        <!--hero start-->
-        <section class="col-12 hero d-flex justify-content-center align-items-center position-relative">
-            <img src="./Assets/banner-01.webp" alt="" class="position-absolute moving-1 moving d-none d-md-block d-lg-block">
-            <img src="./Assets/banner-02.webp" alt="" class="position-absolute moving-5 moving d-none d-md-block d-lg-block">
-            <img src="./Assets/shape-01.webp" alt="" class="position-absolute fixed-2 d-none d-lg-block">
-            <img src="./Assets/shape-02.webp" alt="" class="position-absolute fixed-3 d-none d-lg-block">
-            <img src="./Assets/shape-03.webp" alt="" class="position-absolute fixed-4 d-none d-lg-block">
-            <img src="./Assets/shape-04.webp" alt="" class="position-absolute fixed-1 d-none d-lg-block">
-            <img src="./Assets/shape-05.webp" alt="" class="position-absolute moving-2 moving d-md-block d-none d-lg-block">
-            <img src="./Assets/shape-06.webp" alt="" class="position-absolute moving-6 moving d-md-block d-none d-lg-block">
-            <img src="./Assets/shape-07.webp" alt="" class="position-absolute moving-4 moving">
-            <img src="./Assets/shape-08.webp" alt="" class="position-absolute moving-3 moving">
-            <div class="content d-flex justify-content-center align-items-center flex-column gap-3 gap-md-4 text-center">
-                <h2>Celebrating food</h2>
-                <h2>Celebrating life</h2>
-                <p>
-                    Fast food is a popular category of food that emphasizes quick a service and convenience It
-                    typically includes items n the category of restaurant service, establishments
-                </p>
-                <button class="d-flex justify-content-center gap-2 align-items-center">
-                    Order now 
-                    <i class='bx bx-right-arrow-alt' ></i>
-                </button>
+            <div
+              class="lower d-flex flex-wrap justify-content-center align-items-center gap-1"
+            >
+              <img src="./Assets/gallery-01.webp" alt="" />
+              <img src="./Assets/gallery-02.webp" alt="" />
+              <img src="./Assets/gallery-03.webp" alt="" />
+              <img src="./Assets/gallery-04.webp" alt="" />
+              <img src="./Assets/gallery-05.webp" alt="" />
+              <img src="./Assets/gallery-06.webp" alt="" />
             </div>
-        </section>
-        <!--hero end-->
-        <!--Categories start-->
-        <section class="catagories col-12 p-5">
-            <div class="container d-flex flex-column gap-4 justify-content-center align-items-center">
-                <div class="cards d-flex flex-column flex-md-row justify-content-center align-items-center bg-white">
-                    <div class="scard d-flex flex-column gap-4 align-items-center justify-content-center  p-5">
-                        <img src="./Assets/cat-01.webp" alt="">
-                        <h3>French Fries</h3>
-                    </div>
-                    <div class="scard d-flex flex-column gap-4 align-items-center justify-content-center p-5">
-                        <img src="./Assets/cat-02.webp" alt="">
-                        <h3>Hot Dog</h3>
-                    </div>
-                    <div class="scard d-flex flex-column gap-4 align-items-center justify-content-center p-5">
-                        <img src="./Assets/cat-03.webp" alt="">
-                        <h3>Chicken Fries</h3>
-                    </div>
-                    <div class="scard d-flex flex-column gap-4 align-items-center justify-content-center  p-5">
-                        <img src="./Assets/cat-04.webp" alt="">
-                        <h3>Chicken Pizza</h3>
-                    </div>
-                    <div class="scard d-flex flex-column gap-4 align-items-center justify-content-center  p-5">
-                        <img src="./Assets/cat-05.webp" alt="">
-                        <h3>Cheese Burger</h3>
-                    </div>
+          </div>
+        </div>
+      </header>
+      <!--header end-->
+      <!--hero start-->
+      <section
+        class="col-12 hero d-flex justify-content-center align-items-center position-relative"
+      >
+        <img
+          src="./Assets/banner-01.webp"
+          alt=""
+          class="position-absolute moving-1 moving d-none d-md-block d-lg-block"
+        />
+        <img
+          src="./Assets/banner-02.webp"
+          alt=""
+          class="position-absolute moving-5 moving d-none d-md-block d-lg-block"
+        />
+        <img
+          src="./Assets/shape-01.webp"
+          alt=""
+          class="position-absolute fixed-2 d-none d-lg-block"
+        />
+        <img
+          src="./Assets/shape-02.webp"
+          alt=""
+          class="position-absolute fixed-3 d-none d-lg-block"
+        />
+        <img
+          src="./Assets/shape-03.webp"
+          alt=""
+          class="position-absolute fixed-4 d-none d-lg-block"
+        />
+        <img
+          src="./Assets/shape-04.webp"
+          alt=""
+          class="position-absolute fixed-1 d-none d-lg-block"
+        />
+        <img
+          src="./Assets/shape-05.webp"
+          alt=""
+          class="position-absolute moving-2 moving d-md-block d-none d-lg-block"
+        />
+        <img
+          src="./Assets/shape-06.webp"
+          alt=""
+          class="position-absolute moving-6 moving d-md-block d-none d-lg-block"
+        />
+        <img
+          src="./Assets/shape-07.webp"
+          alt=""
+          class="position-absolute moving-4 moving"
+        />
+        <img
+          src="./Assets/shape-08.webp"
+          alt=""
+          class="position-absolute moving-3 moving"
+        />
+        <div
+          class="content d-flex justify-content-center align-items-center flex-column gap-3 gap-md-4 text-center"
+        >
+          <h2>Celebrating food</h2>
+          <h2>Celebrating life</h2>
+          <p>
+            Fast food is a popular category of food that emphasizes quick a
+            service and convenience It typically includes items n the category
+            of restaurant service, establishments
+          </p>
+          <button
+            class="d-flex justify-content-center gap-2 align-items-center"
+          >
+            Order now
+            <i class="bx bx-right-arrow-alt"></i>
+          </button>
+        </div>
+      </section>
+      <!--hero end-->
+      <!--Categories start-->
+      <section class="catagories col-12 p-5">
+        <div
+          class="container d-flex flex-column gap-4 justify-content-center align-items-center"
+        >
+          <div
+            class="cards d-flex flex-column flex-md-row justify-content-center align-items-center bg-white"
+          >
+            <div
+              class="scard d-flex flex-column gap-4 align-items-center justify-content-center p-5"
+            >
+              <img src="./Assets/cat-01.webp" alt="" />
+              <h3>French Fries</h3>
+            </div>
+            <div
+              class="scard d-flex flex-column gap-4 align-items-center justify-content-center p-5"
+            >
+              <img src="./Assets/cat-02.webp" alt="" />
+              <h3>Hot Dog</h3>
+            </div>
+            <div
+              class="scard d-flex flex-column gap-4 align-items-center justify-content-center p-5"
+            >
+              <img src="./Assets/cat-03.webp" alt="" />
+              <h3>Chicken Fries</h3>
+            </div>
+            <div
+              class="scard d-flex d-md-none d-lg-flex flex-column gap-4 align-items-center justify-content-center p-5"
+            >
+              <img src="./Assets/cat-04.webp" alt="" />
+              <h3>Chicken Pizza</h3>
+            </div>
+            <div
+              class="scard d-flex d-md-none d-lg-flex flex-column gap-4 align-items-center justify-content-center p-5"
+            >
+              <img src="./Assets/cat-05.webp" alt="" />
+              <h3>Cheese Burger</h3>
+            </div>
+          </div>
+          <marquee behavior="" direction="">
+            <img src="./Assets/client-02.webp" alt="" />
+            <img src="./Assets/client-02.webp" alt="" />
+            <img src="./Assets/client-02.webp" alt="" />
+            <img src="./Assets/client-02.webp" alt="" />
+            <img src="./Assets/client-02.webp" alt="" />
+            <img src="./Assets/client-02.webp" alt="" />
+            <img src="./Assets/client-02.webp" alt="" />
+          </marquee>
+        </div>
+      </section>
+      <!--Categories end-->
+      <!--About food start-->
+      <section class="about-food col-12 bg-white">
+        <div
+          class="container d-flex flex-column flex-md-row flex-wrap flex-lg-nowrap justify-content-center align-items-center gap-5 p-4 p-md-5"
+        >
+          <div class="info d-flex flex-column gap-5">
+            <p>About Our Food</p>
+            <h2>Fast And Delicious Quick Bites Big</h2>
+            <p class="brief">
+              Fast food is a popular category of food th emphasizes quick a
+              service and convenience. It typically Fast food is a popular
+              category of food th emphasizes quick a service and convenience. It
+              typically Fast food is a popular category of food th emphasizes
+            </p>
+            <button>Click it out</button>
+          </div>
+          <img src="./Assets/about.webp" alt="" class="main">
+          <div class="data d-flex flex-wrap d-lg-block justify-content-between gap-5 flex-md-nowrap">
+            <div class="item mb-2 mb-md-5">
+                <div class="upper d-flex justify-content-center align-items-center gap-2 gap-md-3">
+                    <img src="./Assets/counter-01.webp" alt="">
+                    <p>20+</p>
                 </div>
-                <marquee behavior="" direction="">
-                    <img src="./Assets/client-02.webp" alt="">
-                    <img src="./Assets/client-02.webp" alt="">
-                    <img src="./Assets/client-02.webp" alt="">
-                    <img src="./Assets/client-02.webp" alt="">
-                    <img src="./Assets/client-02.webp" alt="">
-                    <img src="./Assets/client-02.webp" alt="">
-                    <img src="./Assets/client-02.webp" alt="">
-                </marquee>
+                <p class="light">Spacialist Chef</p>
             </div>
-        </section>
-        <!--Categories end-->
+            <div class="item mb-5">
+                <div class="upper d-flex justify-content-center align-items-center gap-2 gap-md-3">
+                    <img src="./Assets/counter-02.webp" alt="">
+                    <p>20+</p>
+                </div>
+                <p class="light">Spacialist Chef</p>
+            </div>
+            <div class="item mb-5">
+                <div class="upper d-flex justify-content-center align-items-center gap-2 gap-md-3">
+                    <img src="./Assets/counter-03.webp" alt="">
+                    <p>20+</p>
+                </div>
+                <p class="light">Spacialist Chef</p>
+            </div>
+            <div class="item mb-5">
+                <div class="upper d-flex justify-content-center align-items-center gap-2 gap-md-3">
+                    <img src="./Assets/counter-04.webp" alt="">
+                    <p>20+</p>
+                </div>
+                <p class="light">Spacialist Chef</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About food end-->
     </div>
-</body>
+  </body>
 </html>
