@@ -290,6 +290,13 @@ i{
                 font-size: 18px;
                 border-radius: 100px;
                 font-family: "ZCOOL XiaoWei", sans-serif;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #0E1730;
+                    color: white;
+                    transform: translateY(5px);
+                }
             }
         }
         .data{
@@ -305,6 +312,165 @@ i{
             p.light{
                 font-weight: 400;
                 color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+    .offer{
+        background-image: url(./Assets/offer-bg.jpg);
+        min-height: 120vh;
+        .burger-offer{
+            img{
+                width: 705px;
+                height: 478px;
+                object-fit: cover;
+                @media screen and (max-width : 677px) {
+                    width: 280px;
+                    height: 190px;
+                }
+            }
+            .info{
+                p,h2,button{
+                    font-family: "ZCOOL XiaoWei", sans-serif;
+                }
+                p{
+                    font-size: 20px;
+                    @media screen and (max-width : 676px) {
+                        font-size: 14px;
+                    }
+                }
+                h2{
+                    font-size: 50px;
+                    @media screen and (max-width : 676px) {
+                        font-size: 28px;
+                    }
+                }
+                button{
+                    background-color: #00833E;
+                    color: white;
+                    padding: 15px 20px;
+                    border: none;
+                    border-radius: 100px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+        .cta{
+            background: linear-gradient(90deg, rgb(0, 131, 62), rgb(0, 29, 14));
+            bottom: -75%;
+            img{
+                width: 550px;
+                height: 320px;
+                object-fit: cover;
+                @media screen and (max-width : 676px) {
+                    width: 185px;
+                    height: 110px;
+                }
+            }
+            .cta-data {
+                h2,p,button{
+                    font-family: "ZCOOL XiaoWei", sans-serif;
+                }
+                h2{
+                    font-size: 50px;
+                    @media screen and (max-width : 676px) {
+                        font-size: 30px;
+                    }
+                }
+                p{
+                    font-size: 22px;
+                    @media screen and (max-width : 676px) {
+                        font-size: 16px;
+                    }
+                }
+                button{
+                    background-color: #D30000;
+                    padding: 15px 20px;
+                    border: none;
+                    border-radius: 100px;
+                    transition: all 0.5s ease-in-out;
+                    color: white;
+                    font-size: 18px;
+                    &:hover{
+                        transform: translateX(5px);
+                        background-color: #0E1730;
+                    }
+                }
+            }
+        }
+    }
+    .best-selling{
+        background-color: #F3ECDC;
+        min-height: 140vh;
+        text-align: center;
+        padding-bottom: 20px !important;
+        h2,p{
+            font-family: "ZCOOL XiaoWei", sans-serif;
+        }
+        h2{
+            font-size: 50px;
+            font-weight: 500;
+        }
+        p{
+            font-family: "Open Sans", sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .items{
+            .item{
+                transition: all 0.5s ease-in-out;
+                height: 520px;
+                overflow: hidden;
+                &:hover{
+                    transform: scale(1.01);
+                    height: 560px;
+                }
+                .identifier{
+                    p{
+                        font-size: 24px;
+                        font-family: "ZCOOL XiaoWei", sans-serif;
+                        color: black;
+                    }
+                    i{
+                        color: white;
+                        font-size: 28px;
+                        background-color: #D30000;
+                        padding: 10px;
+                        border-radius: 50%;
+                    }
+                }
+                .pricing{
+                    p{
+                        font-family: "ZCOOL XiaoWei", sans-serif;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: black;
+                    }
+                    i{
+                        font-size: 28px;
+                    }
+                }
+                .stars{
+                    i{
+                        font-size: 18px;
+                        color: #FFBA08;
+                    }
+                }
+                .more{
+                    p{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: black;
+                    }
+                    i{
+                        font-size: 24px;
+                    }
+                }
             }
         }
     }
