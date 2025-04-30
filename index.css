@@ -363,7 +363,7 @@ i{
         }
         .cta{
             background: linear-gradient(90deg, rgb(0, 131, 62), rgb(0, 29, 14));
-            bottom: -75%;
+            bottom: -70%;
             img{
                 width: 550px;
                 height: 320px;
@@ -413,6 +413,7 @@ i{
         h2,p{
             font-family: "ZCOOL XiaoWei", sans-serif;
         }
+
         h2{
             font-size: 50px;
             font-weight: 500;
@@ -424,11 +425,8 @@ i{
         .items{
             .item{
                 transition: all 0.5s ease-in-out;
-                height: 520px;
-                overflow: hidden;
                 &:hover{
-                    transform: scale(1.01);
-                    height: 560px;
+                    transform: scale(1.06);
                 }
                 .identifier{
                     p{
