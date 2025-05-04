@@ -29,7 +29,7 @@ const tableBook = () =>{
         {
             icon : "success",
             title : "Table Booked",
-            text : `You successfully booked a table for ${tableData.seats} on ${tableData.date}`
+            text : `You successfully booked a table for ${tableData.seats} person on ${tableData.date}`
         }
     );
     tableSeats.value = "";
