@@ -24,7 +24,16 @@
     <script defer src="./index.js"></script>
   </head>
   <body>
-    <div class="fluid col-12">
+    <div class="fluid col-12 position-relative">
+      <div class="my-modal position-absolute top-0 left-0 col-12 d-none justify-content-center align-items-center" onclick="closeModal()">
+        <div class="bg-white d-flex flex-column gap-5 p-4 rounded align-items-center shadow col-10 col-md-6 position-relative" onclick="event.stopPropagation()">
+          <i class='bx bx-x position-absolute' onclick="closeModal()"></i>
+          <h3>Book a table</h3>
+          <input type="number" class="form-control tableSeats" placeholder="How many seats ?">
+          <input type="date" class="form-control tableDate">
+          <button class="btn btn-success" onclick="tableBook()">Book it</button>
+        </div>
+      </div>
       <!--header start-->
       <header class="col-12">
         <div
@@ -51,6 +60,7 @@
             <i class="bx bx-menu" onclick="showTheOffCanvas()"></i>
             <button
               class="d-none d-lg-flex justify-content-center gap-1 align-items-center"
+              onclick="showModal()"
             >
               Book a table
               <i class="bx bx-right-arrow-alt"></i>
@@ -276,7 +286,6 @@
       <!--offer end-->
       <!--best-seelin start-->
       <section class="best-selling col-12 d-flex flex-column align-items-center justify-content-end">
-
         <div class="container gap-4 text-center">
           <h2>Best Selling Dishes</h2>
           <p class="mb-5">Fast food is a popular category of food that emphasizes quick a service and convenience. It typically includes items</p>
@@ -355,5 +364,6 @@
       </section>
       <!--best-seelin end-->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.16.1/sweetalert2.all.js" integrity="sha512-gG9iGmJWEX+MifPgfm3hFV15M3DdHjyPKYBBd62u/J1E1kGGrdczt3HmQJ66vgM0ytcF9r7cTlq7SbtJLEUWZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
