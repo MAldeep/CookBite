@@ -272,6 +272,7 @@ i{
             width: 456px;
             height: 456px;
             object-fit: cover;
+            animation: rotator 10s linear infinite;
             @media screen and (max-width: 676px) {
                 width: 250px;
                 height: 250px;
@@ -497,6 +498,60 @@ i{
             }
         }
     }
+    .suggestion{
+        background-color: #2D1B19;
+        min-height: 100vh;
+        .shape{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 1000;
+        }
+        .upper{
+            height: 80vh;
+            .pizza{
+                background: linear-gradient(to left,#4d0801, #3d2422);
+                button{
+                    background-color: rgb(254 254 254 / 20%);
+                    border-radius: 100px;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        background-color: white;
+                        color:#0E1730 !important;
+                        transform: translateX(5px);
+                    }
+                    i{
+                        font-size: 22px ;
+                    }
+                }
+            }
+            .shrimp{
+                background: linear-gradient(to left, #3d2422,#4d0801);
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                button{
+                    background-color: rgb(254 254 254 / 20%);
+                    border-radius: 100px;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        background-color: white;
+                        color:#0E1730 !important;
+                        transform: translateX(5px);
+                    }
+                    i{
+                        font-size: 22px ;
+                    }
+                }
+            }
+        }
+    }
 }
 @keyframes spin {
     from {
@@ -504,5 +559,13 @@ i{
     }
     to {
       transform: rotate(360deg) translate(-3px, -1.7px) rotate(-360deg);
+    }
+  }
+  @keyframes rotator {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
   }
